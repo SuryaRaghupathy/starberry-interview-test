@@ -37,7 +37,7 @@ const PropertDetailsPage = () => {
                 >
                   <img
                     src={item.attributes.thumbnail}
-                    style={{ width: "300px", height: "150px" }}
+                    style={{ width: "300px", height: "200px" }}
                     alt={`Property ${index + 1}`}
                   />
                   <p>{item.attributes.address.address1 || "No Address"}</p>

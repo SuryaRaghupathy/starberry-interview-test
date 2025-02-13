@@ -24,8 +24,8 @@ const PropertyDetailsContent = (value) =>{
   <p className="pt-3" style={{ borderBottom: "2px solid #ddd", paddingBottom: "5px", fontWeight: "bold" }}>
   FACTS & FEATURES
 </p>
-<p>Neigbourhood:       </p>
-<p>Price Per sqm: </p>
+<p>Neigbourhood:     Nil  </p>
+<p>Price Per sqm: 365 </p>
 <div className="d-flex">
 <p className="pe-5">Brochure:</p>
  <a href={value.value.attributes.brochure}>Download Brochure</a> </div>
