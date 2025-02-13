@@ -3,8 +3,12 @@ import React from "react";
 
 const PropertyDetailsContent = (value) =>{
  console.log(value.value)
+    const floorplan = value.value.attributes.floorplan.length>0?value.value.attributes.floorplan:''
+    
+
     
     return(
+        
         <>
 
 <div className="d-flex flex-column justify-content-start align-items-start">
@@ -27,8 +31,11 @@ const PropertyDetailsContent = (value) =>{
  <a href={value.value.attributes.brochure}>Download Brochure</a> </div>
  <div className="d-flex">
  <p className="pe-5">Floorplan:</p>
- <a href={value.value.attributes.floorplan
-[0].url}>View FloorPlan</a> </div>
+ {floorplan&&
+ <a href={floorplan}>View FloorPlan</a> 
+ }
+
+</div>
 
 <p className="py-3 text-start">{value.value.attributes.description}</p>
 
